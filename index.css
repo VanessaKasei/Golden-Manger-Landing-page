@@ -1,6 +1,6 @@
 body {
     font-size: larger;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   
 }
 
@@ -40,6 +40,7 @@ body {
 @media screen and (max-width: 600px) {
     .topnav li{
         float: none;
+        font-size: 15px;
     } 
 }
 
@@ -47,26 +48,35 @@ body {
     height: 100vh;
     padding-bottom: 60px;
 }
+
 .section3 {
     height: fit-content;
 }
+
 .section2 {
-    height: 50vh;
+    height: fit-content;
+    padding: 20px;
 }
+
 .section4 {
+    height: fit-content;
+    padding-bottom: 60px;
+}
+
+.section5 {
     height: 30vh;
 }
 
 @media screen and (max-width: 768px) {
      .body {
-        font-size: 15px;
+        font-size: 17px;
      }
 }
 
 .card{
     flex: 1;
     padding: 20px;
-    border: 1px solid #ccc;
+    background-color: black;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 }
@@ -74,23 +84,6 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
-}
-
-
-@media screen and (max-width: 767px) {
-    .section3 {
-        height: auto;
-        padding-bottom: 60px;
-    }
-    .card {
-        width: 70%;
-        height: 350px;
-        margin: 60px;
-    }  
-    .row {
-        display: block;
-        align-items: center;
-    }
 }
 
 @media screen and (max-width: 767px) {
@@ -116,7 +109,7 @@ body {
 
     .card {
         width: 90%;
-        height: 700px;
+        height: 500px;
         margin: 60px;
     }
 
@@ -133,7 +126,7 @@ body {
 
     .card {
         width: 90%;
-        height: 390px;
+        height: 360px;
         margin: 60px;
     }
 
@@ -176,6 +169,7 @@ body {
     padding-top: 40px;
     font-size: 30px;
     font-weight: bolder;
+    color: white;
 }
 
 .container {
@@ -185,9 +179,77 @@ body {
 
 @media screen and (max-width:768px) {
     .greeting {
-        font-size: 15px;
+        font-size: 20px;
     }
     .section1{
         height: 70vh;
     }
+    .section2 {
+        height: auto;
+    }
+}
+
+.section1 {
+    background-image: url('pers4.webp');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.section3 {
+    position: relative;
+}
+.section3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('pers10.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+}
+
+
+.section4 {
+    position: relative;
+}
+
+.section4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('pers4.webp');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    background-repeat: no-repeat;
+}
+h3 {
+    text-decoration: underline;
+    text-align: center;
+    color: white;
+}
+
+.section3,
+.section4 p {
+    color: white;
+}
+.project-link {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #8d8c8c;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.project-link:hover {
+    background-color: #333;
 }
