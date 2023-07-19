@@ -45,6 +45,7 @@ body {
 
 .section1 {
     height: 100vh;
+    padding-bottom: 60px;
 }
 .section3 {
     height: fit-content;
@@ -163,7 +164,30 @@ body {
         padding: 10px;
 }
 
-.sec1img {
+#sec1img {
     max-width: 50%;
     height: auto;
+    float: left;
+    margin: 30px;
+}
+
+.greeting {
+    padding-left: 90px;   
+    padding-top: 40px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:768px) {
+    .greeting {
+        font-size: 15px;
+    }
+    .section1{
+        height: 70vh;
+    }
 }
